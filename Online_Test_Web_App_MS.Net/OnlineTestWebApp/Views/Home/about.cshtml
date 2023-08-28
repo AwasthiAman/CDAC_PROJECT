@@ -5,9 +5,6 @@
     <title>About Us</title>
     <style>
         /* Add your CSS styles here */
-        body {
-            font-family: Arial, sans-serif;
-        }
 
         .container {
             max-width: 800px;
@@ -15,26 +12,40 @@
             padding: 20px;
         }
 
-        .logo {
-            width: 100px;
-        }
-
-        .nav {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-bottom: 20px;
-        }
-
-        .nav-links {
-            list-style: none;
+        body {
             margin: 0;
-            padding: 0;
-            display: flex;
+            font-family: Arial, Helvetica, sans-serif;
         }
 
-            .nav-links li {
-                margin-left: 20px;
+        .topnav {
+            overflow: hidden;
+            background-color: #0077be;
+        }
+
+            .topnav a {
+                float: right;
+                display: block;
+                color: #f2f2f2;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+            }
+
+            .topnav img {
+                float: left;
+                max-width: 100%;
+                max-height: 100%;
+                margin-right: 20px;
+            }
+
+            .topnav a:hover {
+                background-color: #005c99;
+                color: white;
+            }
+
+            .topnav a.active {
+                background-color: #4CAF50;
+                color: white;
             }
 
         .person {
@@ -59,12 +70,15 @@
 <body>
     <div class="container">
         <!-- Navigation -->
-        <div class="nav">
-            <img class="logo" src="https://via.placeholder.com/100x100.png?text=LOGO" alt="Logo">
-            <ul class="nav-links">
-                <li><a href="about">About Us</a></li>
-                <li><a href="register">Register</a></li>
-            </ul>
+        <div class="topnav">
+            <img src="your_image_url_here" alt="CDAC Logo">
+            <a href="#logoff">Logoff</a>
+            <a href="#register">Register</a>
+            <a href="#about">About Us</a>
+        </div>
+
+        <div style="padding-left:16px">
+            <h2>Top Navigation Example</h2>
         </div>
 
         <!-- About Us -->
